@@ -11,6 +11,7 @@ const Favoritescontent: React.FC = () => {
      <hr />
 </div> 
 <div className="cards">
+  
         <div className="card">
           <img src="https://live.staticflickr.com/65535/52667109963_4f76301b9a_b.jpg" 
           alt="Image 4" />
