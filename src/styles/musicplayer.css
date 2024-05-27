@@ -1,0 +1,128 @@
+.music-player {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+  }
+  
+  .track-details {
+    height: 200px;
+    width: 200px;
+    color: #e2dada;
+    background-color: #818181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    animation: rotate 10s infinite;
+    
+  }
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 50px;
+  }
+  
+  .controls button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .controls button:hover {
+    background-color: #555;
+  }
+  
+  .track-list {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    overflow: scroll;
+    margin-top: 30px;
+  }
+  
+  .track {
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .track:hover {
+    background-color: #333;
+  }
+  
+  .track.active {
+    background-color: #555;
+  }
+  .progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    margin-top: 10px;
+  
+  }
+  
+  .time-display {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #eeeeee;
+  }
+  .progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    margin-bottom: 5px;
+    appearance: none;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .progress-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }

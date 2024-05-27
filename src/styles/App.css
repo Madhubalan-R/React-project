@@ -1,0 +1,20 @@
+.Main-Page{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+
+}
+.sidebar-Main{
+  width: calc(100%-100px);
+  height: 100%;
+}
+.Access-page{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  flex-shrink: 0;
+}
