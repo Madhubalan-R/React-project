@@ -1,5 +1,5 @@
 .music-player {
-    background-color: #222;
+    background-color: #ea82ffcb;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -13,7 +13,7 @@
     height: 200px;
     width: 200px;
     color: #e2dada;
-    background-color: #818181;
+    background-color: #f009d1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 50%;
-    animation: rotate 10s infinite;
+    animation: rotate 5s infinite linear;
     
   }
   @keyframes rotate {
@@ -38,19 +38,22 @@
     justify-content: space-between;
     margin-top: 50px;
     height: 50px;
+   
   }
+ 
   
   .controls button {
-    background-color: #444;
+    background-color: #f512e2;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;
   }
   
   .controls button:hover {
-    background-color: #555;
+    color: #f512e2;
+    background-color: white;
   }
   
   .track-list {
@@ -59,6 +62,8 @@
     flex-direction: column;
     overflow: scroll;
     margin-top: 30px;
+    background-color: #ffffff;
+    color: #333;
   }
   
   .track {
@@ -68,11 +73,15 @@
   }
   
   .track:hover {
-    background-color: #333;
+    background-color: #db8fe5;
+    border-radius: 50px;
+    color: #000000;
   }
   
   .track.active {
-    background-color: #555;
+    background-color: #db8fe5;
+    border-radius: 50px;
+    color: #000000;
   }
   .progress-bar-container {
     display: flex;
@@ -114,7 +123,7 @@
     appearance: none;
     width: 15px;
     height: 15px;
-    background: #4caf50;
+    background: #af4caa;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -122,7 +131,7 @@
   .progress-bar::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: #4caf50;
+    background: #af4caa;
     border-radius: 50%;
     cursor: pointer;
   }

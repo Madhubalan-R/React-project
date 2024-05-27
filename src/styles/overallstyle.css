@@ -22,6 +22,7 @@
     padding: 0px;
     max-width: 300px;
     text-align: center;
+    color: white;
   }
 
   .card img {
@@ -58,9 +59,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
   }
   .Feed-main{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+h2{
+  color: white;
+}
