@@ -12,8 +12,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onSelectSection }) => {
   return (
     <div className="sidebar">
           <div className="logo-container">
-        <img src="https://play-lh.googleusercontent.com/fTj7Wddl59mIcAglFGsHF7R4KmFoRh689Trm3RIIzLaB3HrvxipNTnowxoOByrRa7d7P" 
-        alt="Logo" className="logo" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsBENCPa5oA5ECQaBWsx5tKu-ZY4JY-sOg5yi_4jfvQ&s" alt="Logo" className="logo" />
       </div>
       <ul>
       <li onClick={() => onSelectSection('Trending')}>

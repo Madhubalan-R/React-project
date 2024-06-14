@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../styles/musicplayer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faForward, faBackward, faBackwardFast, faForwardFast } from '@fortawesome/free-solid-svg-icons';
+import { log } from 'console';
 
 interface Track {
   title: string;
@@ -48,9 +49,8 @@ const MusicPlayer: React.FC = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-
+  
   const currentTrack = tracks[currentTrackIndex];
-
   useEffect(() => {
     if (audioRef.current && isPlaying) {
       audioRef.current.play();
